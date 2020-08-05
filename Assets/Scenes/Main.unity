@@ -2316,10 +2316,12 @@ MonoBehaviour:
     type: 3}
   _enemyPrefab: {fileID: 2903327071389215633, guid: 8e5409d244b32864eb9fccb99ac81973,
     type: 3}
-  _asteroidInitialCount: 1
+  _asteroidInitialCount: 5
   _safeSpawnDistance: 4
   _lifeMax: 3
   _respawnDelay: 3
+  _specialSpawnDelayInitial: 30
+  _specialSpawnRatio: 0.8
 --- !u!4 &1583900882
 Transform:
   m_ObjectHideFlags: 0
