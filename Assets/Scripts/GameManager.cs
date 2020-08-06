@@ -55,21 +55,7 @@ public class GameManager : MonoBehaviour
         {
             gameState = GameState.mainmenu;
             ClearGameBoard();
-            if (_specialSpawner != null)
-            {
-                StopCoroutine(_specialSpawner);
-                _specialSpawner = null;
-            }
-            if (_shipSpawner != null)
-            {
-                StopCoroutine(_shipSpawner);
-                _shipSpawner = null;
-            }
-            if (_asteroidRespawner != null)
-            {
-                StopCoroutine(_asteroidRespawner);
-                _asteroidRespawner = null;
-            }
+            StopAllCoroutines();
             RespawnAll(true);
         }
         if (screenType == ScreenManager.ScreenType.Game)
