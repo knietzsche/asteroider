@@ -6,15 +6,15 @@ public class InputManager : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            UserAction.Thrust?.Invoke(1f);
+            UserAction.Thrust?.Invoke(6f);
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            UserAction.Rotate?.Invoke(1.4f);
+            UserAction.Rotate?.Invoke(6f);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            UserAction.Rotate?.Invoke(-1.4f);
+            UserAction.Rotate?.Invoke(-6f);
         }
         if (Input.GetKeyDown(KeyCode.Return))
         {

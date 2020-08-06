@@ -64,7 +64,7 @@ public class Ship : Collidable
     {
         if (GameManager.gameState == GameManager.GameState.running)
         {
-            _body.AddRelativeForce(Vector2.up);
+            _body.AddRelativeForce(Vector2.up * force);
             _thrusting = true;
         }
     }
